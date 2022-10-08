@@ -26,8 +26,7 @@ jobs:
          repo_token: "${{ github.token }}"
          automatic_release_tag: ""
          prerelease: false
-         draft: true
-         title: "${{ github.ref}}"
+         title: "${{ github.ref_name}}"
          files: |
            *.dll
            *.exe
