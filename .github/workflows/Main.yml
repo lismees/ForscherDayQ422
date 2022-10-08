@@ -17,10 +17,10 @@ jobs:
         dotnet-version: 6.0.x
     - name: Restore dependencies
       run: dotnet restore
-      working-directory: ForscherTagDemo
+      working-directory: /home/runner/work/ForscherDayQ422/ForscherDayQ422/ForscherTagDemo
     - name: Build
       run: dotnet build --no-restore
-      working-directory: ForscherTagDemo
+      working-directory: /home/runner/work/ForscherDayQ422/ForscherDayQ422/ForscherTagDemo
     - name: Test
       run: dotnet test --no-build --verbosity normal
-      working-directory: ForscherTagDemo
+      working-directory: /home/runner/work/ForscherDayQ422/ForscherDayQ422/ForscherTagDemo
