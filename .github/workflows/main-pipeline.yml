@@ -23,4 +23,4 @@ jobs:
     - name: Build
       run: dotnet build --configuration release --no-restore ./ForscherTagDemo/
     - name: Test
-      run: dotnet test --no-build --verbosity normal ./ForscherTagDemo/
+      run: dotnet test --configuration release --no-build --verbosity normal ./ForscherTagDemo/
