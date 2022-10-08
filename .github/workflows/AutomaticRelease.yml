@@ -26,7 +26,7 @@ jobs:
          repo_token: "${{ github.token }}"
          automatic_release_tag: ""
          prerelease: false
-         title: "Release Build"
+         title: "${{ automatic_release_tag }}"
          files: |
            *.dll
            *.exe
