@@ -16,8 +16,11 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore ForscherTagDemo.sln
+      run: dotnet restore
+      working-directory: ForscherTagDemo
     - name: Build
-      run: dotnet build ForscherTagDemo.sln --no-restore
+      run: dotnet build --no-restore
+      working-directory: ForscherTagDemo
     - name: Test
-      run: dotnet test ForscherTagDemo.sln --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal
+      working-directory: ForscherTagDemo
