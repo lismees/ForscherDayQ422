@@ -21,6 +21,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore ./ForscherTagDemo/
     - name: Build
-      run: dotnet build --no-restore ./ForscherTagDemo/
+      run: dotnet build --configuration release --no-restore ./ForscherTagDemo/
     - name: Test
       run: dotnet test --no-build --verbosity normal ./ForscherTagDemo/
