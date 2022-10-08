@@ -1,4 +1,4 @@
-name: .NET
+name: Main Pipeline
 
 on:
   push:
