@@ -27,6 +27,7 @@ jobs:
          automatic_release_tag: ""
          prerelease: false
          draft: true
+         title: "${{ github.ref}}"
          files: |
            *.dll
            *.exe
